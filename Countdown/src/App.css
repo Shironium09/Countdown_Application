@@ -20,6 +20,14 @@
 
 }
 
+.timer_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .timer_container{
 
     display: flex;
@@ -34,4 +42,90 @@
     font-size: 7rem;
     margin: 0;
 
+}
+
+.timer_container h3{
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.time_input{
+    font-size: 7rem;
+    width: 150px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.time_input:focus{
+    outline: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+.time_input:disabled{
+    color: #000;
+}
+
+.time_input::-webkit-inner-spin-button,
+.time_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.time_input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.button_container{
+    display: flex;
+    gap: 15px;
+}
+
+.button_container button{
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start_btn{
+    background-color: #28a745;
+    color: white;
+}
+
+.start_btn:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.pause_btn{
+    background-color: #ffc107;
+    color: white;
+}
+
+.pause_btn:hover{
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.reset_btn{
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset_btn:hover{
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.button_container button:active{
+    transform: scale(0.95);
 }
